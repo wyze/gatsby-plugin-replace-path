@@ -1,0 +1,48 @@
+{
+  "name": "gatsby-plugin-replace-path",
+  "version": "0.0.0",
+  "description": "A Gatsby plugin to replace page paths.",
+  "license": "MIT",
+  "repository": "wyze/gatsby-plugin-replace-path",
+  "author": {
+    "name": "Neil Kistner",
+    "email": "neil.kistner@gmail.com",
+    "url": "neilkistner.com"
+  },
+  "main": "gatsby-node.js",
+  "scripts": {
+    "build": "microbundle --sourcemap false --format cjs",
+    "clean": "rimraf .rpt2_cache gatsby-node.js",
+    "dev": "microbundle watch --sourcemap false --format cjs",
+    "prebuild": "yarn clean",
+    "test": "jest",
+    "version": "write-changelog"
+  },
+  "files": [
+    "gatsby-node.js"
+  ],
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin"
+  ],
+  "devDependencies": {
+    "@types/jest": "^22.2.3",
+    "jest": "^22.4.3",
+    "microbundle": "^0.4.4",
+    "rimraf": "^2.6.2",
+    "ts-jest": "^22.4.4",
+    "typescript": "^2.8.3",
+    "write-changelog": "^1.1.0"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "ts"
+    ],
+    "testEnvironment": "node",
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.ts$",
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    }
+  }
+}

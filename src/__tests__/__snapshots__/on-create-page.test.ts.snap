@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`onCreatePage calls reporter.panic when pattern option is missing 1`] = `[Error: Must supply \`pattern\` option as a regex or a string.]`;
+
+exports[`onCreatePage calls reporter.panic when replacement option is missing 1`] = `[Error: Must supply \`replacement\` option that is a function or a string.]`;
+
+exports[`onCreatePage creates a new page/delete old page when replacement is made: createPage 1`] = `
+Object {
+  "path": "/thing/",
+}
+`;
+
+exports[`onCreatePage creates a new page/delete old page when replacement is made: deletePage 1`] = `
+Object {
+  "path": "/something/",
+}
+`;
+
+exports[`onCreatePage supports function for replacement option: createPage 1`] = `
+Object {
+  "path": "/somEthing-swEEt/",
+}
+`;
+
+exports[`onCreatePage supports function for replacement option: deletePage 1`] = `
+Object {
+  "path": "/something-sweet/",
+}
+`;
+
+exports[`onCreatePage supports regex for pattern option: createPage 1`] = `
+Object {
+  "path": "/somthing-swt/",
+}
+`;
+
+exports[`onCreatePage supports regex for pattern option: deletePage 1`] = `
+Object {
+  "path": "/something-sweet/",
+}
+`;
