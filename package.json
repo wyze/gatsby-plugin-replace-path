@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-replace-path",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A Gatsby plugin to replace page paths.",
   "license": "MIT",
   "repository": "wyze/gatsby-plugin-replace-path",
